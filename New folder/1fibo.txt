@@ -1,0 +1,22 @@
+# def fn(n):
+#     if n<=1:
+#         return n;
+        
+#     else :
+#         return (fn(n-1) + fn(n-2))
+        
+# n = int(input())
+# print("Fb Sq :")
+
+# for i in range(n):
+#     print(fn(i))
+        
+        
+def fb(n):
+    a, b = 0,1 
+    for _ in range(n):
+        print(a, end=" ")
+        a , b = b, a+b 
+        
+n = 10
+fb(n)
